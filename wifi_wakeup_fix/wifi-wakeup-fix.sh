@@ -13,7 +13,7 @@ cp $SCRIPT_DIR/resources/ssdt_wifi_fix.asl $SCRIPT_DIR/tmp/ssdt_wifi_fix.asl
 iasl -tc ssdt_wifi_fix.asl
 
 echo "Move fix to /boot"
-sudo mv $SCRIPT_DIR/tmp/ssdt_wifi_fix.asl /boot/ssdt_wifi_fix.asl
+sudo mv $SCRIPT_DIR/tmp/ssdt_wifi_fix.aml /boot/ssdt_wifi_fix.aml
 
 echo "Copy acpi load script to /etc/grub.d"
 sudo cp $SCRIPT_DIR/resources/01_acpi /etc/grub.d/01_acpi
